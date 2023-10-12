@@ -7,7 +7,7 @@ pipeline {
 	SERVICE_NAME="nodejs_service"
 	TASK_DEFINITION_NAME="admin"
 	DESIRED_COUNT="1"
-        IMAGE_REPO_NAME="543050024229.dkr.ecr.ap-northeast-1.amazonaws.com/nodejs"
+        IMAGE_REPO_NAME="543050024229.dkr.ecr.ap-northeast-1.amazonaws.com/nodejs:latest"
         IMAGE_TAG="${env.BUILD_ID}"
         REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
 	registryCredential = "devops"
